@@ -52,11 +52,8 @@ aSlider.observe(response, names="value")
 bSlider.observe(response, names="value")
 cSlider.observe(response, names="value")
 
-response("doesn't matter what I send here, just triggering") # MUST be before widgets.VBox - if response(x) is last, NOTHING is drawn! 
+response("")
 
-widgets.VBox([aSlider,
-              bSlider,
-              cSlider,
-              fig])
+widgets.VBox([aSlider, bSlider, cSlider, fig])
 
 # %%
