@@ -35,7 +35,7 @@ sin_txf_fig = go.FigureWidget(layout_yaxis_range=[-0.5,0.5])
 scatter = sin_txf_fig.add_scatter(x=[-1,1], y=[-1,1])
 scatter = sin_txf_fig.add_scatter()
 
-signal_samples=np.linspace(0, 1, COUNT_SAMPLES)
+signal_samples=np.linspace(0, 4, COUNT_SAMPLES)
 fq_samples=np.linspace(1, 100, 100)
 
 def compute_sine_transform(signal, pilot_fq):
